@@ -1,0 +1,26 @@
+body {
+  font-family: $main-font;
+  font-style: normal;
+  font-size: 14px;
+  background-color: $primery-color;
+  color: $pretty-color;
+}
+.container {
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
+}
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+.section-title {
+  margin-bottom: 50px;
+
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+  letter-spacing: 0.03em;
+}

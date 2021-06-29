@@ -1,0 +1,47 @@
+.footer {
+  padding-top: 60px;
+  padding-bottom: 60px;
+
+  background-color: #2f303a;
+  color: $primery-color;
+  line-height: 1.714;
+  letter-spacing: 0.03em;
+}
+.footer .container {
+  display: flex;
+}
+
+.address {
+  margin-top: 20px;
+  font-style: inherit;
+  font-weight: 400;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+}
+
+.footer-list__item {
+  margin-top: 9px;
+}
+.footer-network__title,
+.footer-form__title {
+  display: block;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1, 14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+.footer-network {
+  margin-left: 70px;
+}
+
+.footer-network__list {
+  display: flex;
+  width: 206px;
+  justify-content: space-between;
+}
+.footer-network__item {
+  width: 44px;
+  height: 44px;
+}
