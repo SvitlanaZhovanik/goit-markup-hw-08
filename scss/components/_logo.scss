@@ -1,4 +1,7 @@
 .logo {
+  margin-top: 16px;
+  margin-left: 15px;
+  margin-bottom: 16px;
   font-family: Raleway;
   font-weight: bold;
   font-size: 26px;
@@ -11,6 +14,11 @@
   &:focus,
   &:hover {
     color: $accent-color;
+  }
+  @media screen and(min-width:768px) {
+    margin-top: 24px;
+    margin-bottom: 24px;
+    margin-left: 0;
   }
 }
 .logo-accent {

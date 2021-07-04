@@ -1,7 +1,12 @@
 .work {
+  display: none;
   padding-top: 0;
+  @media screen and (min-width: 1200px) {
+    display: block;
+  }
 }
 .foto-box {
+  @extend %list;
   display: flex;
 }
 .foto-box__item {

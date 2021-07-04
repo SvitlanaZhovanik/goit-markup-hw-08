@@ -1,9 +1,22 @@
 .button-project {
+  @extend %list;
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
+  margin-bottom: -13px;
+  @media screen and (min-widht: 480px) {
+    justify-content: left;
+  }
+  @media screen and (min-width: 480px) {
+    margin-bottom: 30px;
+  }
 }
 .button-project__item:not(:last-child) {
   margin-right: 8px;
+  margin-bottom: 13px;
+  @media screen and (min-widht: 768px) {
+    margin-bottom: 0;
+  }
 }
 .button-project__button {
   display: block;
