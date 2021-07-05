@@ -1,11 +1,12 @@
 .footer-form {
-  margin: auto;
+  margin: 0 auto;
   @media screen and (min-width: 768px) {
     width: 450px;
   }
   @media screen and (min-width: 1200px) {
     margin-left: 93px;
     margin-top: 0;
+    margin-right: 0;
     width: auto;
   }
 }
@@ -33,6 +34,7 @@
   }
   @media screen and (min-width: 1200px) {
     width: 358px;
+    margin-bottom: 0;
   }
 }
 
@@ -152,17 +154,21 @@
   margin-left: 36px;
   font-style: normal;
   font-weight: 400;
-  font-size: 14px;
-  line-height: 1.71;
+  font-size: 12px;
+  line-height: 1.16;
   letter-spacing: 0.03em;
   color: $text-color;
+  @media screen and (min-width: 1200px) {
+    font-size: 14px;
+    line-height: 1.71;
+  }
 }
 .policy__link {
   color: $accent-color;
 }
 .policy__icon {
   position: absolute;
-  top: 20px;
+  top: auto;
   left: 13px;
   width: 16px;
   height: 15px;
@@ -175,9 +181,6 @@
   .policy__checkbox:checked + .policy__text & {
     background-color: $accent-color;
     border: none;
-  }
-  @media screen and (min-width: 1200px) {
-    top: 5px;
   }
 }
 

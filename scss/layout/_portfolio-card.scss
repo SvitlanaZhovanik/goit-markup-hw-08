@@ -59,7 +59,6 @@
   color: $text-color;
 }
 .project__box {
-  height: 146px;
   padding-top: 20px;
   padding-left: 24px;
   padding-right: 24px;
@@ -68,7 +67,11 @@
   border-right: 1px solid #eeeeee;
   border-bottom: 1px solid #eeeeee;
   background: $primery-color;
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    height: 146px;
+  }
 }
+
 .project__overlay {
   position: relative;
   overflow: hidden;

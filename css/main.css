@@ -279,9 +279,9 @@ img {
 
 @media screen and (min-width: 768px) {
   .header-block {
-    -webkit-box-align: baseline;
-        -ms-flex-align: baseline;
-            align-items: baseline;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
@@ -303,9 +303,10 @@ img {
 @media screen and (min-width: 1200px) {
   .header-nav {
     width: 935px;
-    -webkit-box-align: baseline;
-        -ms-flex-align: baseline;
-            align-items: baseline;
+    height: 79px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
 }
 
@@ -385,9 +386,9 @@ img {
 }
 
 .logo {
-  margin-top: 16px;
+  padding-top: 16px;
   margin-left: 15px;
-  margin-bottom: 16px;
+  padding-bottom: 16px;
   font-family: Raleway;
   font-weight: bold;
   font-size: 26px;
@@ -405,8 +406,8 @@ img {
 
 @media screen and (min-width: 768px) {
   .logo {
-    margin-top: 24px;
-    margin-bottom: 24px;
+    padding-top: 24px;
+    padding-bottom: 24px;
     margin-left: 0;
   }
 }
@@ -426,7 +427,6 @@ img {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  height: 400px;
   padding-top: 118px;
   padding-bottom: 118px;
   margin-left: auto;
@@ -465,7 +465,9 @@ img {
   .hero {
     background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/desktop/fonhero.jpg);
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/desktop/fonhero.jpg);
-    width: 1200px;
+    width: 1600px;
+    padding-top: 200px;
+    padding-bottom: 200px;
   }
 }
 
@@ -793,16 +795,11 @@ img {
   margin-bottom: -13px;
 }
 
-@media screen and (min-widht: 480px) {
+@media screen and (min-width: 480px) and (max-width: 767px) {
   .button-project {
     -webkit-box-pack: left;
         -ms-flex-pack: left;
             justify-content: left;
-  }
-}
-
-@media screen and (min-width: 480px) {
-  .button-project {
     margin-bottom: 30px;
   }
 }
@@ -812,7 +809,7 @@ img {
   margin-bottom: 13px;
 }
 
-@media screen and (min-widht: 768px) {
+@media screen and (min-width: 768px) {
   .button-project__item:not(:last-child) {
     margin-bottom: 0;
   }
@@ -938,7 +935,6 @@ img {
 }
 
 .project__box {
-  height: 146px;
   padding-top: 20px;
   padding-left: 24px;
   padding-right: 24px;
@@ -947,6 +943,12 @@ img {
   border-right: 1px solid #eeeeee;
   border-bottom: 1px solid #eeeeee;
   background: #ffffff;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .project__box {
+    height: 146px;
+  }
 }
 
 .project__overlay {
@@ -1038,6 +1040,12 @@ img {
   font-weight: 400;
   line-height: 1.71;
   letter-spacing: 0.03em;
+}
+
+@media screen and (min-width: 1200px) {
+  .address {
+    margin-bottom: 0;
+  }
 }
 
 .footer-list__item {
@@ -1166,7 +1174,7 @@ img {
 }
 
 .footer-form {
-  margin: auto;
+  margin: 0 auto;
 }
 
 @media screen and (min-width: 768px) {
@@ -1179,6 +1187,7 @@ img {
   .footer-form {
     margin-left: 93px;
     margin-top: 0;
+    margin-right: 0;
     width: auto;
   }
 }
@@ -1237,6 +1246,7 @@ img {
 @media screen and (min-width: 1200px) {
   .footer-form__mail {
     width: 358px;
+    margin-bottom: 0;
   }
 }
 
@@ -1382,10 +1392,17 @@ img {
   margin-left: 36px;
   font-style: normal;
   font-weight: 400;
-  font-size: 14px;
-  line-height: 1.71;
+  font-size: 12px;
+  line-height: 1.16;
   letter-spacing: 0.03em;
   color: #757575;
+}
+
+@media screen and (min-width: 1200px) {
+  .policy__text {
+    font-size: 14px;
+    line-height: 1.71;
+  }
 }
 
 .policy__link {
@@ -1394,7 +1411,7 @@ img {
 
 .policy__icon {
   position: absolute;
-  top: 20px;
+  top: auto;
   left: 13px;
   width: 16px;
   height: 15px;
@@ -1408,12 +1425,6 @@ img {
 .policy__checkbox:checked + .policy__text .policy__icon {
   background-color: #2196f3;
   border: none;
-}
-
-@media screen and (min-width: 1200px) {
-  .policy__icon {
-    top: 5px;
-  }
 }
 
 .form__button {
